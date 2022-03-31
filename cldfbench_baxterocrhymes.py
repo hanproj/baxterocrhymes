@@ -30,7 +30,7 @@ def is_chinese(name):
 
 
 def parse_line(line):
-    phrases = line.split("、")
+    phrases = [p for p in line.split("、") if p.strip()]
     out = []
     for phrase in phrases:
         chars = []
@@ -169,8 +169,8 @@ class Dataset(BaseDataset):
                             "Language_ID": "OldChinese",
                             "Rhyme_Words": rhyme_words,
                             "Rhyme_Word_Indices": rhyme_word_idxs ,
-                            "Rhyme_IDS": ["{0}-{1}-{2}".format(
-                                poem_id, stanza, rid) for rid in rhyme_idxs]
+                            "Rhyme_IDS": ["{0}-{1}".format(
+                                poem_id, rid) for rid in rhyme_idxs]
                             })
                         idx += 1
         for i, (entry, occs) in enumerate(entries.items()):
