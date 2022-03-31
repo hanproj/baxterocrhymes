@@ -12,16 +12,16 @@
     "dcat:accessURL": "https://github.com/hanproj/baxterocrhymes",
     "prov:wasDerivedFrom": [
         {
-            "rdf:about": "https://github.com/hanproj/baxterocrhymes",
             "rdf:type": "prov:Entity",
-            "dc:created": "3cacbd8",
-            "dc:title": "Repository"
+            "dc:title": "Repository",
+            "rdf:about": "https://github.com/hanproj/baxterocrhymes",
+            "dc:created": "cf68082"
         },
         {
-            "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.5-20-g9bdfb86608",
-            "dc:title": "Glottolog"
+            "dc:title": "Glottolog",
+            "rdf:about": "https://github.com/glottolog/glottolog",
+            "dc:created": "v4.5-20-g9bdfb86608"
         }
     ],
     "prov:wasGeneratedBy": [
@@ -114,7 +114,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ExampleTable",
-            "dc:extent": 7305,
+            "dc:extent": 7286,
             "tableSchema": {
                 "columns": [
                     {
